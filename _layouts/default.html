@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=700">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="openid2.provider" href="https://www.google.com/accounts/o8/ud">
+    <link rel="openid2.local_id" href="https://www.google.com/accounts/o8/id">
+  </head>
+  <body>
+    <div id="all">
+      <div id="header">
+        <a href="/"><img class="avatar" src="/img/site/david_clear.png" alt="Me, as Kent sees me." /></a>
+        <h1><a href="/">David Collantes&rsquo; Scribbles</a></h1>
+      </div>
+      <div id="content">
+        {% comment %} page.date is used as a sentinel to find out if we are
+        rendering a post {% endcomment %}
+        {% if page.date %}
+          <div class="post">
+            <h1>{{ page.title }}</h1>
+            <p class="date">{{ page.date | date_to_long_string }}</p>
+            {{ content }}
+          </div>
+        {% else %}
+          {{ content }}
+        {% endif %}
+      </div>
+      <div id="footer">
+        Online from 1992 &ndash; {{ site.time | date: "%Y" }}. <a href="/gpg/">David Collantes</a> &ndash; <a href="/imprint/">Imprint and License</a>.
+      </div>
+    </div>
+  </body>
+</html>

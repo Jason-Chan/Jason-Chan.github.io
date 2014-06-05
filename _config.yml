@@ -1,0 +1,41 @@
+safe: true  # GitHub overrides this to true
+host: localhost
+port: 8080
+baseurl: /
+url: http://localhost
+
+source: .  # GitHub overrides this
+destination: /Users/david/Documents/Local  # GitHub overrides this
+plugins: ./_plugins
+
+future: true
+lsi: false  # GitHub overrides this to false
+pygments: true  # GitHub overrides this to true
+markdown: maruku
+permalink: /notes/:title
+
+maruku:
+  use_tex: false
+  use_divs: false
+  png_engine: blahtex
+  png_dir: img/latex
+  png_url: /img/latex
+
+rdiscount:
+  extensions: []
+
+kramdown:
+  auto_ids: true,
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  use_coderay: false
+
+coderay:
+  coderay_wrap: div
+  coderay_line_numbers: inline
+  coderay_line_numbers_start: 1
+  coderay_tab_width: 4
+  coderay_bold_every: 10
+  coderay_css: style
