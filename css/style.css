@@ -22,11 +22,11 @@ a:visited {
     color: #6c71c4;
 }
 
-a[href^="http://"]:not([href*="collantes.us"]):after {
+a[href^="http://"]:not([href*="jason-chan.github.io"]):after {
  content: " " url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAALCAYAAABLcGxfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHVJREFUeNqUj9ENwCAIRMX4rxt0Dfb/0TW6gU5AMZGWGrTpS4wYOe4AInJCKeV52CTQgh08rPJ1hM1n1JOlgJzzywIRwRB2wSkOrRfc2KwIo/FmFYnEiWu3FejmETFpoZ8F8w584mckC3Hy7ifiUOflVlwCDAD7aDdkNyNkZQAAAABJRU5ErkJggg==);
 }
 
-a[href^="https://"]:not([href*="collantes.us"]):after {
+a[href^="https://"]:not([href*="jason-chan.github.io"]):after {
     content: " " url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAALCAYAAABLcGxfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHVJREFUeNqUj9ENwCAIRMX4rxt0Dfb/0TW6gU5AMZGWGrTpS4wYOe4AInJCKeV52CTQgh08rPJ1hM1n1JOlgJzzywIRwRB2wSkOrRfc2KwIo/FmFYnEiWu3FejmETFpoZ8F8w584mckC3Hy7ifiUOflVlwCDAD7aDdkNyNkZQAAAABJRU5ErkJggg==);
 }
 
